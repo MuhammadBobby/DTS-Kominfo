@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "toko");
+$conn = mysqli_connect("localhost", "root", "", "digitalent_mahasiswa_baru");
 
 // Memeriksa koneksi
 if ($conn->connect_error) {
