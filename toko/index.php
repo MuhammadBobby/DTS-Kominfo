@@ -22,6 +22,7 @@ $result = $conn->query($sql);
             <th>Merek</th>
             <th>Jumlah</th>
             <th>Warna</th>
+            <th>Aksi</th>
         </tr>
 
         <?php
@@ -35,6 +36,12 @@ $result = $conn->query($sql);
                     <td><?= $row['nama_merek'] ?></td>
                     <td><?= $row['jumlah'] ?></td>
                     <td><?= $row['warna'] ?></td>
+                    <td>
+                        <a href="edit_barang.php?id=<?= $row['id'] ?>">Edit</a>
+                        |
+                        <a href="delete_barang.php?id=<?= $row['id'] ?>">Delete</a>
+
+                    </td>
                 </tr>
 
         <?php
