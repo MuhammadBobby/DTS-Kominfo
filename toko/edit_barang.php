@@ -19,25 +19,31 @@ $row = $result->fetch_assoc();
 </head>
 
 <body>
-    <h2>Form edit Barang</h2>
-    <form method="POST" action="edit_proses.php">
-        <br>
-        <label for="nama_merek">Nama Merek:</label><br>
-        <input type="text" name="nama_merek" id="nama_merek" value="<?= $row['nama_merek'] ?>"><br>
+    <div style="width: 50%; margin: 0 auto; padding-top: 50px;">
+        <h2>Form Edit Barang</h2>
+        <form method="POST" action="edit_proses.php">
+            <input type="hidden" name="id" value="<?= $row['id'] ?>">
 
-        <input type="hidden" name="id" id="id" value="<?= $row['id'] ?>">
+            <div style="margin-bottom: 10px;">
+                <label for="nama_merek">Nama Merek:</label><br>
+                <input type="text" name="nama_merek" id="nama_merek" value="<?= $row['nama_merek'] ?>" required>
+            </div>
 
-        <br>
-        <label for="jumlah">Jumlah :</label><br>
-        <input type="text" name="jumlah" id="jumlah" value="<?= $row['jumlah'] ?>"><br>
+            <div style="margin-bottom: 10px;">
+                <label for="jumlah">Jumlah:</label><br>
+                <input type="text" name="jumlah" id="jumlah" value="<?= $row['jumlah'] ?>" required>
+            </div>
 
-        <br>
-        <label for="warna">Warna:</label><br>
-        <input type="text" name="warna" id="warna" value="<?= $row['warna'] ?>"><br>
+            <div style="margin-bottom: 10px;">
+                <label for="warna">Warna:</label><br>
+                <input type="text" name="warna" id="warna" value="<?= $row['warna'] ?>" required>
+            </div>
 
-        <br>
-        <input type="submit" name="submit" value="submit">
-    </form>
+            <div style="margin-top: 20px;">
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
