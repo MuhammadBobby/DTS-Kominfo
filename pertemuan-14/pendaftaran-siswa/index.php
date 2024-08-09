@@ -20,6 +20,9 @@
         <a href="daftar.php" class="btn btn-success">Daftar Siswa Baru</a>
         <a href="lihat_siswa.php" class="btn btn-primary">Lihat Data Siswa</a>
     </div>
+
+    <!-- FOOTER -->
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

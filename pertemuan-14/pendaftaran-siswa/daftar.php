@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <!-- nav -->
+    <?php include 'navbar.php'; ?>
+
     <div class="container mt-5">
         <h2>Form Pendaftaran</h2>
         <!-- form (nama, alamat, jenkel, agama, sekolah ke daftra_proses kembali ke lihat_siswa) -->
@@ -58,6 +61,9 @@
             <a href="lihat_siswa.php" class="btn btn-primary">Kembali</a>
         </form>
     </div>
+
+    <!-- footer -->
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

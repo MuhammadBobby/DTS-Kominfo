@@ -28,6 +28,9 @@ function active_radio_button($value, $input)
 </head>
 
 <body>
+    <!-- nav -->
+    <?php include 'navbar.php'; ?>
+
     <div class="container mt-5">
         <h2>Update Data</h2>
         <form action="proses_edit.php" method="POST">
@@ -78,6 +81,9 @@ function active_radio_button($value, $input)
             <a href="lihat_siswa.php" class="btn btn-primary">Kembali</a>
         </form>
     </div>
+
+    <!-- footer -->
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
