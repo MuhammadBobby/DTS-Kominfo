@@ -14,38 +14,7 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed start-0 end-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="dist/images/logoAsahan.png" alt="Logo Asahan" width="50" class="d-inline-block align-text-top">
-                Sungai Asahan
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tentang">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#paket">Paket Wisata</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#lokasi">Lokasi</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <button class="btn btn-success px-3" type="button">Login</button>
-            </div>
-        </div>
-    </nav>
+    <?php include 'element/navbar.php'; ?>
     <!-- end nav -->
 
     <!-- jumbotron -->
@@ -87,39 +56,42 @@
             <div class="col-8">
                 <div class="row">
                     <div class="col-md-5 mt-3">
-                        <a href="" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <a href="form-pemesanan.php?paket=small" class="link-offset-2 link-underline link-underline-opacity-0">
                             <div class="card bg-body-secondary shadow-lg" style="width: 18rem;">
                                 <img src="dist/images/paketSmall.jpg" height="200" class="card-img-top" alt="Paket Small">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold text-primary">Paket Small</h5>
                                     <p class="card-text">Paket Small adalah paket wisata arung jeram / rafting untuk 4-9 pengunjung. Paket ini ditujukan untuk para pengunjung dengan kelompok kecil sekali rafting dengan harga terjangkau.</p>
                                     <p class="fw-bold text-dark">Harga : Rp 900.000</p>
+                                    <a href="form-pemesanan.php?paket=small" class="btn btn-primary">Pilih Paket</a>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-md-5 mt-3">
-                        <a href="" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <a href="form-pemesanan.php?paket=medium" class="link-offset-2 link-underline link-underline-opacity-0">
                             <div class="card bg-body-secondary shadow-lg" style="width: 18rem;">
                                 <img src="dist/images/paketMedium.jpg" height="200" class="card-img-top" alt="Paket Medium">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold text-primary">Paket Medium</h5>
                                     <p class="card-text">Paket Medium adalah paket wisata arung jeram / rafting untuk 10-15 pengunjung. Paket ini ditujukan untuk para pengunjung dengan kelompok rafting yang cukup besar untuk sekali rafting.</p>
                                     <p class="fw-bold text-dark">Harga : Rp 1.000.000</p>
+                                    <a href="form-pemesanan.php?paket=medium" class="btn btn-primary">Pilih Paket</a>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-md-5 mt-3">
-                        <a href="" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <a href="form-pemesanan.php?paket=party" class="link-offset-2 link-underline link-underline-opacity-0">
                             <div class="card bg-body-secondary shadow-lg" style="width: 18rem;">
                                 <img src="dist/images/paketParty.jpg" height="200" class="card-img-top object-fit-cover" alt="Paket Party">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold text-primary">Paket Party</h5>
                                     <p class="card-text">Paket Party adalah paket wisata arung jeram / rafting untuk 15-20 pengunjung. Paket ini untuk anda yang akan menikmati rafting beramai-ramai untuk sekali perjalanan rafting.</p>
                                     <p class="fw-bold text-dark">Harga : Rp 1.000.000</p>
+                                    <a href="form-pemesanan.php?paket=party" class="btn btn-primary">Pilih Paket</a>
                                 </div>
                             </div>
                         </a>
@@ -153,14 +125,7 @@
     </div>
     <!-- lokasi -->
 
-    <footer class="bg-secondary text-bg-dark text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright
-            <a class="text-warning text-decoration-none" href="https://github.com/MuhammadBobby">Muhammad Bobby</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+    <?php include 'element/footer.php'; ?>
 
     <script src="dist/js/bootstrap.js"></script>
 </body>
