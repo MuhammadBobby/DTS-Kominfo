@@ -1,0 +1,33 @@
+.navbar {
+  z-index: 999;
+}
+
+.jumbo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  background-image: url("../images/jumbotron.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbo h1 {
+  font-weight: bold;
+}
+
+/* form */
+.form-pemesanan {
+  padding: 8rem 0;
+}
+.bg-form {
+  background-image: url("../images/jumbotron.png");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
